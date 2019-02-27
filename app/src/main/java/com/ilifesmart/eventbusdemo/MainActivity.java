@@ -14,6 +14,7 @@ public class MainActivity extends PreferenceActivity {
 
 	public static final String TAG = "MainActivity";
 
+	// 这种目前看来并不是特别好，难怪此方案被抛弃.
 	@Override
 	public void onBuildHeaders(List<Header> target) {
 		loadHeadersFromResource(R.xml.app_preference_headers, target);
