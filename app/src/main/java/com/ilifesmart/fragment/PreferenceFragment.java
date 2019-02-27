@@ -34,24 +34,12 @@ public class PreferenceFragment extends PreferenceFragmentCompat {
 		}
 
 		getPreferenceManager().setSharedPreferencesName("Settings");
-//		if (bundle != null && bundle.get("key").equals("value")) {
-//			addPreferencesFromResource(R.xml.app_preferences_jiangye);
-//		} else {
-			addPreferencesFromResource(R.xml.app_preference);
-//		}
+		addPreferencesFromResource(R.xml.app_preference);
 	}
 
 	@Override
 	public boolean onPreferenceTreeClick(Preference preference) {
 		Log.d(TAG, "onPreferenceTreeClick: preference " + preference.getKey());
-
-//		if (preference instanceof PreferenceScreen) {
-//			Log.d(TAG, "onPreferenceTreeClick: >>>>>>>>>>>>> 1");
-//			onNavigateToScreen((PreferenceScreen)preference);
-//			return true;
-//		} else {
-//			Log.d(TAG, "onPreferenceTreeClick: >>>>>>>>>> 2");
-//		}
 		return super.onPreferenceTreeClick(preference);
 	}
 }
